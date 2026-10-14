@@ -1,0 +1,69 @@
+!DOCTYPE html
+html lang=en
+head
+    meta charset=UTF-8
+    meta name=viewport content=width=device-width, initial-scale=1.0
+    titleFastz Tech S-WiFi  Welcometitle
+    style
+         { box-sizing border-box; margin 0; padding 0; font-family 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color #f4f7f6; display flex; justify-content center; align-items center; min-height 100vh; padding 20px; }
+        .login-card { background #ffffff; width 100%; max-width 400px; padding 30px; border-radius 12px; box-shadow 0 4px 15px rgba(0,0,0,0.1); border-top 5px solid #00875a; }
+        .brand-header { text-align center; margin-bottom 25px; }
+        .brand-header h1 { color #333333; font-size 24px; font-weight 700; letter-spacing -0.5px; }
+        .brand-header h1 span { color #00875a; }
+        .brand-header p { color #666666; font-size 14px; margin-top 5px; }
+        .tariff-box { background #f9f9f9; padding 15px; border-radius 8px; margin-bottom 25px; border 1px solid #eeeeee; }
+        .tariff-box h3 { font-size 14px; color #333333; margin-bottom 8px; text-transform uppercase; letter-spacing 0.5px; }
+        .tariff-row { display flex; justify-content space-between; font-size 14px; padding 4px 0; color #555555; }
+        .tariff-row strong { color #00875a; }
+        .form-group { margin-bottom 18px; }
+        .form-group label { display block; font-size 13px; font-weight 600; color #444444; margin-bottom 6px; }
+        .form-group input, .form-group select { width 100%; padding 12px; border 1px solid #cccccc; border-radius 6px; font-size 15px; outline none; transition border-color 0.2s; }
+        .form-group inputfocus, .form-group selectfocus { border-color #00875a; }
+        .btn-connect { width 100%; background #00875a; color #ffffff; border none; padding 14px; font-size 16px; font-weight 600; border-radius 6px; cursor pointer; transition background 0.2s; margin-top 10px; }
+        .btn-connecthover { background #006644; }
+        .footer-note { text-align center; font-size 11px; color #999999; margin-top 25px; }
+    style
+head
+body
+
+div class=login-card
+    div class=brand-header
+        h1Fastz Tech spanS-WiFispanh1
+        pHigh-Speed Internet Access Portalp
+    div
+
+    div class=tariff-box
+        h3Available Packagesh3
+        div class=tariff-rowspan1 Hour PassspanstrongUGX 500strongdiv
+        div class=tariff-rowspan24-Hour PassspanstrongUGX 2,000strongdiv
+        div class=tariff-rowspan7-Day Weekly BundlespanstrongUGX 7,000strongdiv
+        div class=tariff-rowspan30-Day Monthly MembershipspanstrongUGX 30,000strongdiv
+    div
+
+    !-- Interface form redirects to MikroTik servlet gateway or payment handler --
+    form action=login method=post
+        div class=form-group
+            label for=phoneMobile Money Phone Numberlabel
+            input type=tel id=phone name=username placeholder=07XXXXXXXX required
+        div
+
+        div class=form-group
+            label for=packageSelect Your Internet Time Bundlelabel
+            select id=package name=password required
+                option value= disabled selectedChoose a package...option
+                option value=5001 Hour Pass (UGX 500)option
+                option value=200024-Hour Pass (UGX 2,000)option
+                option value=70007-Day Weekly Bundle (UGX 7,000)option
+                option value=3000030-Day Monthly Membership (UGX 30,000)option
+            select
+        div
+
+        button type=submit class=btn-connectPay & Connect via Mobile Moneybutton
+    form
+
+    p class=footer-notePowered by Fastz Tech Infrastructure. For backup printed voucher tickets, visit the nearest retail partner agent desk.p
+div
+
+body
+html
